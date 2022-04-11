@@ -7,7 +7,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'linluk/vim-websearch'
 	Plug 'jamshedvesuna/vim-markdown-preview', { 'for': 'markdown', 'do': 'brew install grip' }
 	Plug 'sheerun/vim-polyglot'
-	Plug 'elzr/vim-json'
+	Plug 'elzr/vim-json', { 'for': 'json' }
 	Plug 'tpope/vim-fugitive'
 	Plug 'scrooloose/syntastic'
 	Plug 'klen/python-mode'
@@ -25,6 +25,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'airblade/vim-gitgutter'
 	Plug 'vim-latex/vim-latex', { 'for': 'tex' }
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+	Plug 'shougo/vimshell.vim'
 call plug#end()
 
 
