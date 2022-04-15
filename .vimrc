@@ -102,7 +102,9 @@ set completeopt		=menuone,longest,preview	" allow to finding in
 " set completeopt+=popup
 " set completepopup=height:10,width:60,highlight:Pmenu,border:off
 
-set colorcolumn=80
+
+set colorcolumn=100
+autocmd FileType python        setlocal colorcolumn=120
 
 " History
 set history			=1000
@@ -164,6 +166,7 @@ autocmd Filetype smith    setlocal commentstring=;\ %s
 
 " filetype
 autocmd BufRead,BufNewFile *.ifjcode 	set filetype=sh
+autocmd BufRead,BufNewFile *.cls 		set filetype=tex
 " autocmd BufRead,BufNewFile *.html		set filetype=html
 " autocmd BufRead,BufNewFile *.c	set filetype=c
 " autocmd BufRead,BufNewFile *.cpp		set filetype=cpp
