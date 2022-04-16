@@ -26,6 +26,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-latex/vim-latex', { 'for': 'tex' }
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	Plug 'shougo/vimshell.vim'
+	Plug 'keith/swift.vim'
+	Plug 'apple/swift'
 call plug#end()
 
 

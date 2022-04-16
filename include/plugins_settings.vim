@@ -63,7 +63,7 @@ vnoremap <leader>ws :WebSearchVisual<CR>
 set statusline+=%#warningmsg#
 " set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_stl_format = "[%E{Err: %fe #%e}%B{, }%W{Warn: %fw #%w}]"
+let g:syntastic_stl_format = "[%E{|Err-%fe-#%e|}%B{, }%W{|Warn-%fw-#%w|}]"
 let g:synastic_debug = 1
 " basics
 let g:syntastic_always_populate_loc_list = 1
@@ -94,6 +94,11 @@ let g:syntastic_mode_map = {
 let g:syntastic_shell = "/bin/sh"
 " php
 let g:syntastic_php_checkers = ["php", "phpmd", "phpstan"] " phpcs, phplint
+" swift
+let g:syntastic_swift_swiftlint_use_defaults = 1
+let g:syntastic_swift_checkers = ['swift', 'swiftpm', 'swiftlint']
+
+
 
 
 """"" Plug 'klen/python-mode'
