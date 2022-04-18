@@ -16,6 +16,7 @@ view/
 *.my_rc
 *.my_out
 *.html
+*.netrwhist
 
 # latex
 *.{aux,dvi,log,ps,out,toc,xml}
