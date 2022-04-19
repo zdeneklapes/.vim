@@ -28,6 +28,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'shougo/vimshell.vim'
 	Plug 'keith/swift.vim'
 	" Plug 'apple/swift'
+	Plug 'tokorom/vim-swift-format'
 call plug#end()
 
 

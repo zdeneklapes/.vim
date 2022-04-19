@@ -175,3 +175,14 @@ let vim_markdown_preview_hotkey='<C-m>'
 let vim_markdown_preview_browser='Google Chrome'
 " let vim_markdown_preview_temp_file=1
 
+""""" Plug 'tokorom/vim-swift-format'
+" let g:ale_linters = {
+" \   'swift': ['swift-format'],
+" \}
+
+" let g:vim_swift_format_use_ale = 1
+" " default
+" let g:vim_swift_format_executable = 'swift-format'
+" let g:vim_swift_format_lint_command = 'swift-format lint %s'
+" let g:vim_swift_format_format_command = 'swift-format format --in-place %s'
+
