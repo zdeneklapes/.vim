@@ -27,8 +27,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	Plug 'shougo/vimshell.vim'
 	Plug 'keith/swift.vim'
-	" Plug 'apple/swift'
 	Plug 'tokorom/vim-swift-format'
+	" Plug 'apple/swift'
 call plug#end()
 
 
