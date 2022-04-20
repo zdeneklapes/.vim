@@ -1,7 +1,8 @@
 # program
 bundle/
 plugged/
-session/
+session/*
+!session/vimrc_session.vim
 view/
 
 

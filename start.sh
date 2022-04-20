@@ -38,6 +38,11 @@ function zip() {
 	zip -r vim.zip .vimrc start.sh spell autoload include 	
 }
 
+function clean() {
+	rm .netrwhist
+
+}
+
 ##### PARSE CLI-ARGS
 [[ "$#" -eq 0 ]] && usage && exit 0
 while [ "$#" -gt 0 ]; do
@@ -45,6 +50,7 @@ while [ "$#" -gt 0 ]; do
 		"--create_symlink") create_symlink ;;
 		"--pull") pull ;;
 		"--zip") zip ;;
+		"--zip") clean ;;
 		"-h"|"--help"|*) usage ;;
 	esac
 	shift
