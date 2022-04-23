@@ -30,7 +30,7 @@ let g:airline_theme='selenized'
 """"" Plug 'valloric/youcompleteme', {'do': 'python3 install.py --all' }
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_auto_hover=''
-nnoremap gd :YcmCompleter GoTo<CR>
+nnoremap gd :YcmCompleter GetDoc<CR>
 " let g:ycm_global_ycm_extra_conf = './.ycm_extra_conf.py'
 " let g:ycm_show_diagnostics_ui = 0	" disable ycm syntastic check
 
@@ -125,6 +125,7 @@ let g:clang_format#style_options = {
 \ "AccessModifierOffset" : -4,
 \ "AllowShortIfStatementsOnASingleLine" : "true",
 \ "AlwaysBreakTemplateDeclarations" : "true",
+\ "ColumnLimit": "100",
 \ "Standard" : "C++11"}
 autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 " map to <Leader>cf in C++ code
