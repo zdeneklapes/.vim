@@ -17,6 +17,8 @@ autocmd FileType c,cpp,vim,vhdl,asm colorscheme darcula
 """"" Plug 'kien/ctrlp.vim'
 nnoremap <leader>. :CtrlPBufTag<cr>
 " nnoremap <leader>. :CtrlPBufTagAll<cr>
+" let g:ctrlp_map = '<c-p>'
+" let g:ctrlp_cmd = 'CtrlP'
 
 
 """"" Plug 'vim-airline/vim-airline'

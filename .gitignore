@@ -1,6 +1,8 @@
 # program
 bundle/
 plugged/
+autoload/*
+!autoload/plug.vim
 session/*
 !session/vimrc_session.vim
 view/

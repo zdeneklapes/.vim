@@ -10,24 +10,22 @@ call plug#begin('~/.vim/plugged')
 	Plug 'elzr/vim-json', { 'for': 'json' }
 	Plug 'tpope/vim-fugitive'
 	Plug 'scrooloose/syntastic'
-	Plug 'klen/python-mode'
-	Plug 'majutsushi/tagbar'
-	Plug 'Chiel92/vim-autoformat'
-	Plug 'junegunn/gv.vim'
+	Plug 'klen/python-mode', { 'for': 'python' }
+	Plug 'majutsushi/tagbar', { 'on': 'TagbarToggle' }
+	Plug 'Chiel92/vim-autoformat', { 'on': 'AutoFormat' }
+	Plug 'junegunn/gv.vim', { 'on': 'GV' }
 	Plug 'tpope/vim-commentary'
-	Plug 'puremourning/vimspector'
-	Plug 'szw/vim-maximizer'
-	Plug 'nvim-lua/plenary.nvim'
+	Plug 'szw/vim-maximizer', { 'on': 'MaximizerToggle' }
 	Plug 'folke/todo-comments.nvim'
-	Plug 'rhysd/vim-clang-format'
+	Plug 'rhysd/vim-clang-format', { 'on': 'ClangFormat'}
 	Plug 'kassio/neoterm'
 	Plug 'editorconfig/editorconfig-vim'
 	Plug 'airblade/vim-gitgutter'
 	Plug 'vim-latex/vim-latex', { 'for': 'tex' }
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-	Plug 'shougo/vimshell.vim'
-	Plug 'keith/swift.vim'
-	Plug 'tokorom/vim-swift-format'
+	Plug 'shougo/vimshell.vim', { 'for': 'sh' }
+	Plug 'keith/swift.vim', { 'for': 'swift' }
+	Plug 'tokorom/vim-swift-format', { 'for': 'swift' }
 	" Plug 'apple/swift'
 call plug#end()
 
