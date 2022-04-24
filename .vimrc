@@ -109,6 +109,14 @@ match ExtraWhitespace /\s\+$/
 set colorcolumn=100
 autocmd FileType python        setlocal colorcolumn=120
 
+" Session options
+set sessionoptions=buffers,curdir,folds,help,tabpages,winsize,terminal,options
+" set sessionoptions-=globals
+" set sessionoptions-=localoptions
+" set sessionoptions-=options
+" set sessionoptions-=buffers
+" set sessionoptions-=resize
+
 
 " History
 set history			=1000
@@ -119,7 +127,7 @@ set history			=1000
 
 "Cursor settings:
 "  1 -> blinking block
-"  2 -> solid block 
+"  2 -> solid block
 "  3 -> blinking underscore
 "  4 -> solid underscore
 "  5 -> blinking vertical bar

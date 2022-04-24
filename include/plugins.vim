@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'kien/ctrlp.vim'
 	Plug 'vim-airline/vim-airline'
 	Plug 'vim-airline/vim-airline-themes'
-	Plug 'valloric/youcompleteme', {'do': 'python3 install.py --all' }
+	Plug 'valloric/youcompleteme', {'do': 'python3 install.py --all', 'for': ['c','cpp', 'java', 'cs', 'go', 'python', 'javascript', 'typescript', 'rust'] }
 	Plug 'linluk/vim-websearch'
 	Plug 'jamshedvesuna/vim-markdown-preview', { 'for': 'markdown', 'do': 'brew install grip' }
 	Plug 'sheerun/vim-polyglot'
