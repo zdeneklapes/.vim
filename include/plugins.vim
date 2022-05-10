@@ -26,11 +26,13 @@ call plug#begin('~/.vim/plugged')
 	Plug 'shougo/vimshell.vim', { 'for': 'sh' }
 	Plug 'keith/swift.vim', { 'for': 'swift' }
 	Plug 'tokorom/vim-swift-format', { 'for': 'swift' }
-	" Plug 'apple/swift'
+	Plug 'peterhoeg/vim-qml'
+	Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 
 
 """"" PLUG
+" Plug 'apple/swift'
 " Plug 'neoclide/coc.nvim', {'branch': 'master', 'do': 'yarn install --frozen-lockfile'}
 " Plug 'shougo/neocomplete.vim'
 " Plug 'instant-markdown/vim-instant-markdown'

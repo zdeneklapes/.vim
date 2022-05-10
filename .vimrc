@@ -37,6 +37,8 @@ highlight clear SpellRare
 highlight SpellRare  term=underline cterm=underline
 highlight clear SpellLocal
 highlight SpellLocal term=underline cterm=underline
+highlight ExtraWhitespace ctermbg=red guibg=red
+match ExtraWhitespace /\s\+$/
 
 
 "##############################################################################
@@ -102,10 +104,6 @@ set completeopt		=menuone,longest,preview	" allow to finding in
 " set completeopt+=popup
 " set completepopup=height:10,width:60,highlight:Pmenu,border:off
 
-" trailing whitespaces
-highlight ExtraWhitespace ctermbg=red guibg=red
-match ExtraWhitespace /\s\+$/
-
 set colorcolumn=100
 autocmd FileType python        setlocal colorcolumn=120
 
@@ -116,7 +114,6 @@ set sessionoptions=buffers,curdir,folds,help,tabpages,winsize,terminal,options
 " set sessionoptions-=options
 " set sessionoptions-=buffers
 " set sessionoptions-=resize
-
 
 " History
 set history			=1000
@@ -216,6 +213,11 @@ let g:netrw_preview		= 1
 "#####################################"
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
+if &diff
+    map <leader>1 :diffget LOCAL<CR>
+    map <leader>2 :diffget BASE<CR>
+    map <leader>3 :diffget REMOTE<CR>
+endif
 
 "#####################################"
 "##				nnoremap			##"
@@ -233,6 +235,10 @@ nnoremap _  :vert resize -10<CR>
 
 " Make Y yank till end of line
 nnoremap Y y$
+
+" VIMRC
+nnoremap <Leader>ve :e ~/.vimrc<CR>
+nnoremap <Leader>vr :source ~/.vimrc<CR>
 
 
 "#####################################"

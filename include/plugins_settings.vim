@@ -16,6 +16,7 @@ autocmd FileType c,cpp,vim,vhdl,asm colorscheme darcula
 
 """"" Plug 'kien/ctrlp.vim'
 nnoremap <leader>. :CtrlPBufTag<cr>
+let g:ctrlp_use_caching = 0
 " nnoremap <leader>. :CtrlPBufTagAll<cr>
 " let g:ctrlp_map = '<c-p>'
 " let g:ctrlp_cmd = 'CtrlP'
@@ -189,4 +190,11 @@ let vim_markdown_preview_browser='Google Chrome'
 " let g:vim_swift_format_executable = 'swift-format'
 " let g:vim_swift_format_lint_command = 'swift-format lint %s'
 " let g:vim_swift_format_format_command = 'swift-format format --in-place %s'
+
+""""" Plug 'editorconfig/editorconfig-vim'
+let g:EditorConfig_exclude_patterns = ['fugitive://.*']
+let g:EditorConfig_exclude_patterns = ['scp://.*']
+let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
+au FileType gitcommit let b:EditorConfig_disable = 1
+
 
