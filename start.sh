@@ -26,7 +26,7 @@ function error_exit() {
 ##### PROCESS COMMAND
 function create_symlink() {
 	cd .. | error_exit "cd command"
-	ln -s ${HOME}/.vim/.vimrc .vimrc
+	ln -s $HOME/.vim/.vimrc .vimrc
 	cd - | error_exit "cd command"
 }
 
@@ -47,7 +47,7 @@ function clean() {
 [[ "$#" -eq 0 ]] && usage && exit 0
 while [ "$#" -gt 0 ]; do
 	case "$1" in
-		"--create_symlink") create_symlink ;;
+		"--create-symlink") create_symlink ;;
 		"--pull") pull ;;
 		"--zip") zip ;;
 		"--zip") clean ;;

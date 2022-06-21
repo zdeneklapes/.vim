@@ -28,6 +28,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'tokorom/vim-swift-format', { 'for': 'swift' }
 	Plug 'peterhoeg/vim-qml'
 	Plug 'vim-scripts/AutoComplPop'
+	Plug 'vim-scripts/bash-support.vim', { 'for': 'sh' }
 call plug#end()
 
 
