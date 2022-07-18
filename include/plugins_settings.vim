@@ -198,3 +198,12 @@ let g:EditorConfig_exclude_patterns = ['fugitive://.*', 'scp://.*']
 au FileType gitcommit let b:EditorConfig_disable = 1
 
 
+""""" Plug 'vim-scripts/AutoComplPop'
+let g:AutoComplPop_Behavior = {
+\ 'c': [ {'command' : "\<C-x>\<C-o>",
+\       'pattern' : ".",
+\       'repeat' : 0}
+\      ]
+\}
+let g:AutoComplPop_CompleteoptPreview = 1
+

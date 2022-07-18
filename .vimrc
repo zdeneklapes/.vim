@@ -13,9 +13,11 @@ colorscheme darcula
 autocmd FileType c,cpp,vim,vhdl,asm colorscheme darcula
 
 
+
 "##############################################################################
 "##                                 SYNTAX                                  ###
 "##############################################################################
+let python_highlight_all=1
 syntax on
 syntax enable
 

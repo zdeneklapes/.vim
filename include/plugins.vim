@@ -29,6 +29,9 @@ call plug#begin('~/.vim/plugged')
 	Plug 'peterhoeg/vim-qml'
 	Plug 'vim-scripts/AutoComplPop'
 	Plug 'vim-scripts/bash-support.vim', { 'for': 'sh' }
+	Plug 'vim-scripts/indentpython.vim'
+	Plug 'nvie/vim-flake8'
+	Plug 'vim-scripts/AutoComplPop'
 call plug#end()
 
 
