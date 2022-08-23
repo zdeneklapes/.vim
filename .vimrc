@@ -170,6 +170,8 @@ setlocal smartindent
 "##############################################################################
 "##                                 AUTOCMD                                 ###
 "##############################################################################
+autocmd BufWritePre * :%s/\s\+$//e
+
 " setlocal
 autocmd FileType *        setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 autocmd Filetype netrw    setlocal bufhidden=delete "or use qa!"

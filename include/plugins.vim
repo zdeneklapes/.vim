@@ -32,6 +32,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-scripts/indentpython.vim'
 	Plug 'nvie/vim-flake8'
 	Plug 'vim-scripts/AutoComplPop'
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf.vim'
 call plug#end()
 
 
