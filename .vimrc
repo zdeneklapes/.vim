@@ -179,6 +179,7 @@ autocmd Filetype smith    setlocal commentstring=;\ %s
 
 " filetype
 autocmd BufRead,BufNewFile *.ifjcode 	set filetype=sh
+autocmd BufRead,BufNewFile *.env* 		set filetype=sh
 autocmd BufRead,BufNewFile *.cls 		set filetype=tex
 " autocmd BufRead,BufNewFile *.html		set filetype=html
 " autocmd BufRead,BufNewFile *.c	set filetype=c

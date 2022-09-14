@@ -17,6 +17,7 @@ autocmd FileType c,cpp,vim,vhdl,asm colorscheme darcula
 """"" Plug 'kien/ctrlp.vim'
 nnoremap <leader>. :CtrlPBufTag<cr>
 let g:ctrlp_use_caching = 0
+let g:ctrlp_show_hidden=1
 " nnoremap <leader>. :CtrlPBufTagAll<cr>
 " let g:ctrlp_map = '<c-p>'
 " let g:ctrlp_cmd = 'CtrlP'
@@ -83,7 +84,7 @@ let g:syntastic_warning_symbol = "\u26A0"
 " sh
 let g:syntastic_sh_checkers = ["checkbashisms", "sh", "shellcheck"] " bashate
 " c
-let g:syntastic_c_checkers = [ "cppcheck", "cppclean", "gcc", "make", "sparse", "splint", "oclint"]  
+let g:syntastic_c_checkers = [ "cppcheck", "cppclean", "gcc", "make", "sparse", "splint", "oclint"]
 let g:syntastic_c_sparse_post_args="-gcc-base-dir " .
 \ system("gcc -v 2>&1 | sed -n '/^Reading specs/ { s#.* /#/#; s#/[^/]*$##; p; }'")
 " cpp
@@ -93,7 +94,7 @@ let g:syntastic_python_pylint_post_args="--max-line-length=120"
 let g:syntastic_mode_map = {
 \ "mode": "active",
 \ "active_filetypes": ["ruby", "php", "cpp", "python", "py", "sh", "shell"],
-\ "passive_filetypes": ["python"] 
+\ "passive_filetypes": ["python"]
 \ }
 let g:syntastic_shell = "/bin/sh"
 " php
@@ -142,6 +143,7 @@ autocmd FileType c,cpp,objc vnoremap <buffer><Leader>cf :ClangFormat<CR>
 nnoremap <C-t>  :NERDTreeToggle<CR>
 nnoremap <C-tf> :NERDTreeFind<CR>
 let NERDTreeQuitOnOpen=1
+let NERDTreeShowHidden=1
 
 
 """"" Plug 'puremourning/vimspector'
