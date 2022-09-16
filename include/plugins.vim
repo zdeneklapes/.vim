@@ -34,6 +34,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'vim-scripts/AutoComplPop'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
+	Plug 'natebosch/vim-lsc'
 call plug#end()
 
 
@@ -93,5 +94,5 @@ call plug#end()
 " 	Plugin 'kassio/neoterm', {'on': []}
 " call vundle#end()            " required
 " filetype plugin indent on    " required
-" 
+"
 
