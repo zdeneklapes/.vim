@@ -21,7 +21,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'kassio/neoterm'
 	Plug 'editorconfig/editorconfig-vim'
 	Plug 'airblade/vim-gitgutter'
-	Plug 'vim-latex/vim-latex', { 'for': 'tex' }
+	" Plug 'vim-latex/vim-latex', { 'for': 'tex' }
 	Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 	Plug 'shougo/vimshell.vim', { 'for': 'sh' }
 	Plug 'keith/swift.vim', { 'for': 'swift' }
@@ -35,6 +35,7 @@ call plug#begin('~/.vim/plugged')
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 	Plug 'natebosch/vim-lsc'
+	Plug 'liuchengxu/vista.vim'
 call plug#end()
 
 
