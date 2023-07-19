@@ -216,6 +216,8 @@ let g:netrw_preview		= 1
 "#####################################"
 "##				vnoremap			##"
 "#####################################"
+" yank or copy the selected text and then performs a search using the yanked text, escaping any
+" special characters, and moving the cursor to the next match.
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 if &diff
