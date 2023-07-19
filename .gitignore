@@ -1,4 +1,5 @@
 # program
+vimspector-config/
 bundle/
 plugged/
 autoload/*
