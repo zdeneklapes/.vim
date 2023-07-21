@@ -1,7 +1,5 @@
 syntax on
-"##############################################################################
-"##                                 INCLUDES                                ###
-"##############################################################################
+""" INCLUDES
 " include
 source ~/.vim/include/plugins_settings.vim
 " source ~/.vim/include/coc_settings.vim
@@ -14,23 +12,17 @@ autocmd FileType c,cpp,vim,vhdl,asm colorscheme darcula
 
 
 
-"##############################################################################
-"##                                 SYNTAX                                  ###
-"##############################################################################
+""" SYNTAX
 let python_highlight_all=1
 syntax on
 syntax enable
 
 
-"##############################################################################
-"##                                 PATHOGEN                                ###
-"##############################################################################
+""" PATHOGEN
 " execute pathogen#infect()
 
 
-"##############################################################################
-"##                                 HIGHLIGHT                               ###
-"##############################################################################
+""" HIGHLIGHT
 highlight clear SpellBad
 highlight SpellBad   term=standout  cterm=underline ctermfg=1 term=underline
 highlight clear SpellCap
@@ -43,9 +35,7 @@ highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 
 
-"##############################################################################
-"##                                 SET                                     ###
-"##############################################################################
+""" SET
 " set runtimepath+=~/.vim/bundle/
 set backspace		=indent,eol,start " must to be backspace work
 
@@ -68,7 +58,7 @@ autocmd Filetype makefile   setlocal noexpandtab softtabstop=4
 set timeoutlen		=1000
 set ttimeoutlen		=0
 
-# for DOS ini and .conf files
+" for DOS ini and .conf files
 setf dosini
 
 " Terminal
@@ -163,16 +153,12 @@ set signcolumn=auto	" when errors are not hide column
 set sessionoptions-=blank " for syntastic error save
 
 
-"##############################################################################
-"##                                 SETLOCAL                                ###
-"##############################################################################
+""" SETLOCAL
 setlocal smarttab
 setlocal smartindent
 
 
-"##############################################################################
-"##                                 AUTOCMD                                 ###
-"##############################################################################
+""" AUTOCMD
 autocmd BufWritePre * :%s/\s\+$//e
 
 " setlocal
@@ -201,12 +187,8 @@ autocmd BufWinLeave *.* mkview			"create view
 autocmd BufWinLeave *.* silent loadview "load saved view
 
 
-"##############################################################################
-"##                                 MAP										###
-"##############################################################################
-"#####################################"
-"##				vars				##"
-"#####################################"
+""" MAP
+""" vars
 let mapleader			= '\'
 let ghregex				= '\(^\|\s\s\)\zs\.\S\+'
 " netwr
@@ -216,9 +198,7 @@ let g:netrw_liststyle	= 3		"tree
 let g:netrw_preview		= 1
 
 
-"#####################################"
-"##				vnoremap			##"
-"#####################################"
+""" vnoremap
 " yank or copy the selected text and then performs a search using the yanked text, escaping any
 " special characters, and moving the cursor to the next match.
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
@@ -229,9 +209,7 @@ if &diff
     map <leader>3 :diffget REMOTE<CR>
 endif
 
-"#####################################"
-"##				nnoremap			##"
-"#####################################"
+"" nnoremap
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
@@ -251,9 +229,7 @@ nnoremap <Leader>ve :e ~/.vimrc<CR>
 nnoremap <Leader>vr :source ~/.vimrc<CR>
 
 
-"#####################################"
-"##				nmap				##"
-"#####################################"
+""" nmap
 nmap <F2> :noh<CR>
 nmap <C-e> <ESC>:Vex<CR>
 " netwr
@@ -262,15 +238,11 @@ nmap <F4> gh
 vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 
-"#####################################"
-"##				imap				##"
-"#####################################"
+""" imap
 " imap <F5> <ESC>:noh<CR>i
 
 
-"##############################################################################
 "##                                 TRASH                                   ###
-"##############################################################################
 " nmap <F3> command <CR>
 "imap <F3> <ESC> command <CR>i
 
