@@ -68,6 +68,9 @@ autocmd Filetype makefile   setlocal noexpandtab softtabstop=4
 set timeoutlen		=1000
 set ttimeoutlen		=0
 
+# for DOS ini and .conf files
+setf dosini
+
 " Terminal
 " set termwinkey		=<ESC>[31~ " nmap <ESC>[31~ :terminal<CR>
 " set termwinsize		=10x0
