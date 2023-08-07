@@ -2,39 +2,10 @@
 vimspector-config/
 bundle/
 plugged/
-autoload/*
+autoload/
 !autoload/plug.vim
-session/*
-!session/vimrc_session.vim
+session/
 view/
-
-
-*.json
-*.lock
-*.xml
-*.txt
-!requirements.txt
-*.log
-*.my_xml
-*.my_xml_diff
-*.my_rc
-*.my_out
-*.html
-*.netrwhist
-
-# latex
-*.{aux,dvi,log,ps,out,toc,xml}
-*.aux,dvi,log,ps,out,toc,xml}
-*.aux
-*.dvi
-*.log
-*.ps
-*.out
-*.toc
-*.xml
-*.blg
-*.bbl
-docs/dokumentace.pdf
 
 # project folders
 .idea/
@@ -45,19 +16,9 @@ vendor/
 debug/
 test*/
 libs/
-#tests_2/
-#Testy/
-#tests_basic/
-#test1_is_it_ok/
-
 others/
+
 *.zip
-
-zadani/
-is_it_ok.sh
-
-
-# others
 tags
 cscope.out
 
