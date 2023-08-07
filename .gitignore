@@ -6,6 +6,7 @@ autoload/
 !autoload/plug.vim
 session/
 view/
+.netrwhist
 
 # project folders
 .idea/
